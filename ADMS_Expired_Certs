@@ -1,31 +1,31 @@
 <#
 	.SYNOPSIS
-      API tool for pulling a list of expired certificates
+		API tool for pulling a list of expired certificates
 
 	.DESCRIPTION
-      Fetches /nitro/v1/config/ns_ssl_certkey from ADM Service.
-      https://developer.cloud.com/app-delivery-and-security/citrix-application-delivery-management-service/ns_ssl_certkey/apis/ns_ssl_certkey/getall_ns_ssl_certkey
+		Fetches /nitro/v1/config/ns_ssl_certkey from ADM Service.
+		https://developer.cloud.com/app-delivery-and-security/citrix-application-delivery-management-service/ns_ssl_certkey/apis/ns_ssl_certkey/getall_ns_ssl_certkey
         
 	.FUNCTIONALITY
-      Application Delivery Manager Service
+		 Application Delivery Manager Service
 
 	.NOTES
-      AUTHOR : R. Davis
-      VERSION: 23 MAY 2022 initial build
+		AUTHOR : R. Davis
+		VERSION: 23 MAY 2022 initial build
 
-      Requires Powershell Version 7.0
+		Requires Powershell Version 7.0
     
-  .INPUTS
-      none.  The application is interactive.
+  	.INPUTS
+		none.  The application is interactive.
         
-  .EXAMPLE
-      Requires version 7.0+
-      Running PowerShell 7.2.3.
+  	.EXAMPLE
+		Requires version 7.0+
+		Running PowerShell 7.2.3.
 
-  .NOTES
-      This sample code is provided to you as is with no representations, 
-      warranties or conditions of any kind. You may use, modify and 
-      distribute it at your own risk. 
+  	.NOTES
+		This sample code is provided to you as is with no representations, 
+		warranties or conditions of any kind. You may use, modify and 
+		distribute it at your own risk. 
 #>
 $CLIENT_ID="ee7a47df-76df-4ef4-9f7b-demo"
 $CLIENT_SECRET="demo-gqrads-QXzdRdgqrjzPQw="
