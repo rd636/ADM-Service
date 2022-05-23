@@ -21,6 +21,9 @@
   	.EXAMPLE
 		Requires version 7.0+
 		Running PowerShell 7.2.3.
+		Action: citrixs24692 logging in
+		Token: eyJhbGciOiJSUzI1NiIsInR5c....
+		Certificates: 17
 
   	.NOTES
 		This sample code is provided to you as is with no representations, 
@@ -54,7 +57,7 @@ $array  =  @{ 'Uri'  = "https://adm.cloud.com/massvc/$CUSTOMER_ID/nitro/v2/confi
             }
 try {
         $objects = @((Invoke-RestMethod @array -TimeoutSec 30 -SkipCertificateCheck).ns_ssl_certkey)
-        Write-Host "certificates: $($objects.count)" 
+        Write-Host "Certificates: $($objects.count)" 
         $objects | Export-Csv -Path .\ns_ssl_certkey.csv
     } catch { Write-Warning $_ }
 ###
