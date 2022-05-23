@@ -24,6 +24,7 @@
 		Action: citrixs24692 logging in
 		Token: eyJhbGciOiJSUzI1NiIsInR5c....
 		Certificates: 17
+		Saved in .\ns_ssl_certkey.csv
 
   	.NOTES
 		This sample code is provided to you as is with no representations, 
@@ -59,6 +60,7 @@ try {
         $objects = @((Invoke-RestMethod @array -TimeoutSec 30 -SkipCertificateCheck).ns_ssl_certkey)
         Write-Host "Certificates: $($objects.count)" 
         $objects | Export-Csv -Path .\ns_ssl_certkey.csv
+	Write-Host "Saved in .\ns_ssl_certkey.csv"
     } catch { Write-Warning $_ }
 ###
 ### END
